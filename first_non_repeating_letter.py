@@ -1,17 +1,17 @@
 def first_non_repeating_letter(string):
     temp = string.lower()
-    all_repeat = False
-    if len(string) == 0:
-        return ""
+
     for i, char in enumerate(temp):
         if temp.count(char) <= 1:
             return string[i]
-        elif temp.count(char) > 1:
-            all_repeat = True
-        else:
-            all_repeat = False
-    if all_repeat:
-        return None
+    return ""
 
+# def first_non_repeating_letter(string):
+#     string_lower = string.lower()
+#     for i, letter in enumerate(string_lower):
+#         if string_lower.count(letter) == 1:
+#             return string[i]
+#
+#     return ""
 
 print(first_non_repeating_letter('sttreess'))
