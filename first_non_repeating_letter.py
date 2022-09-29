@@ -2,7 +2,7 @@ def first_non_repeating_letter(string):
     temp = string.lower()
 
     for i, char in enumerate(temp):
-        if temp.count(char) <= 1:
+        if temp.count(char) == 1:
             return string[i]
     return ""
 
